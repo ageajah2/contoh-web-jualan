@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Boba Barokah - Pesan Bubble Tea Favoritmu</title>
+    <!-- Font Awesome 6 (Free Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>Boba Barokah</span>
+        </div>
+        <div class="cart-icon" id="cartIconBtn">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cartCountBadge">0</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <i class="fas fa-bubble"></i> Menu Spesial Boba
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+    </div>
+
+    <footer>
+        <i class="fas fa-heart" style="color:#e09d6e;"></i> Pesan via WhatsApp & Nikmati Kenikmatan Boba!
+    </footer>
+
+    <!-- Toast notifikasi -->
+    <div id="toastMsg" class="toast-msg">✨ Ditambahkan ke keranjang</div>
+
+    <!-- Keranjang overlay + sidebar -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> Keranjang Boba</h2>
+            <button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <div class="empty-cart">Keranjang masih kosong <i class="fas fa-mug-hot"></i></div>
+        </div>
+        <div class="checkout-form" id="checkoutForm" style="display: none;">
+            <div class="form-group">
+                <label for="custName"><i class="fas fa-user"></i> Nama Lengkap</label>
+                <input type="text" id="custName" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="custAddress"><i class="fas fa-map-marker-alt"></i> Alamat Pengiriman</label>
+                <textarea id="custAddress" placeholder="Masukkan alamat lengkap pengiriman" required></textarea>
+            </div>
+        </div>
+        <div class="cart-total">
+            <span>Total</span>
+            <span id="cartTotalPrice">Rp 0</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">
+            <i class="fab fa-whatsapp"></i> Checkout via WhatsApp
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
