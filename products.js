@@ -47,5 +47,12 @@ const products = [
         "desc": "bubble tea unik",
         "price": 22000,
         "image": "https://mamalikestocook.com/wp-content/uploads/2021/04/feature-blue-boba-milk-tea.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Pertamax",
+        "desc": "Bahlil",
+        "price": 16250,
+        "image": "https://cdn.antaranews.com/cache/1200x800/2014/09/20140919PERTAMAX-KEMASAN-KALENG-180914-JOS-2.jpg"
     }
 ];
